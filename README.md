@@ -27,6 +27,20 @@ VS uses some magic to automatically retart the web server when you make changes 
 
 `dotnet run`
 
+### Clip 7 - Adding the OdeToFood.Core project
+
+You can use `dotnet` to create a class library. Place this at the same folder level as the OdeToFood project. 
+
+```
+dotnet new classlib
+```
+
+## Module 2
+
+### Clip 3 
+
+Changes for Bootstrap 4 - TBD
+
 
 
 
