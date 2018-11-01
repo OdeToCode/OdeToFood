@@ -6,5 +6,25 @@
 
 <h2>Editing @Model.Restaurant.Name</h2>
 
+<form method="post">
 
+    <input type="hidden" asp-for="Restaurant.Id" />
+    <div class="form-group">
+        <label asp-for="Restaurant.Name"></label>
+        <input asp-for="Restaurant.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Location"></label>
+        <input asp-for="Restaurant.Location" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Cuisine"></label>
+        <select class="form-control" asp-for="Restaurant.Cuisine" 
+                                     asp-items="Model.Cuisines"                                    
+>
+            
+        </select>
+    </div>
 
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
