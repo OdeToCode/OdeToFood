@@ -29,7 +29,7 @@ VS uses some magic to automatically retart the web server when you make changes 
 
 ### Clip 7 - Adding the OdeToFood.Core project
 
-You can use `dotnet` to create a class library. Place this at the same folder level as the OdeToFood project. 
+You can use `dotnet` to create the class library. Place this at the same folder level as the OdeToFood project. 
 
 ```
 dotnet new classlib
@@ -41,6 +41,11 @@ dotnet new classlib
 
 Changes for Bootstrap 4 - TBD
 
+## Module 4
+
+### Clip 2 
+
+Alternatives to MSSQL 
 
 
 
