@@ -1,150 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Include="node_modules\datatables.net-bs\css\dataTables.bootstrap.css" />
-    <Content Include="node_modules\datatables.net-bs\css\dataTables.bootstrap.min.css" />
-    <Content Include="node_modules\datatables.net-bs\License.txt" />
-    <Content Include="node_modules\datatables.net-bs\package.json" />
-    <Content Include="node_modules\datatables.net\License.txt" />
-    <Content Include="node_modules\datatables.net\package.json" />
-    <Content Include="node_modules\jquery\AUTHORS.txt" />
-    <Content Include="node_modules\jquery\bower.json" />
-    <Content Include="node_modules\jquery\external\sizzle\LICENSE.txt" />
-    <Content Include="node_modules\jquery\LICENSE.txt" />
-    <Content Include="node_modules\jquery\package.json" />
-    <Content Include="node_modules\jquery\src\.eslintrc.json" />
-  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="ComputeFilesToPublish">
+    <Exec Command="npm install" />
+  </Target>
 
   <ItemGroup>
-    <None Include="node_modules\datatables.net-bs\js\dataTables.bootstrap.js" />
-    <None Include="node_modules\datatables.net-bs\js\dataTables.bootstrap.min.js" />
-    <None Include="node_modules\datatables.net-bs\Readme.md" />
-    <None Include="node_modules\datatables.net\js\jquery.dataTables.js" />
-    <None Include="node_modules\datatables.net\js\jquery.dataTables.min.js" />
-    <None Include="node_modules\datatables.net\Readme.md" />
-    <None Include="node_modules\jquery\dist\core.js" />
-    <None Include="node_modules\jquery\dist\jquery.js" />
-    <None Include="node_modules\jquery\dist\jquery.min.js" />
-    <None Include="node_modules\jquery\dist\jquery.min.map" />
-    <None Include="node_modules\jquery\dist\jquery.slim.js" />
-    <None Include="node_modules\jquery\dist\jquery.slim.min.js" />
-    <None Include="node_modules\jquery\dist\jquery.slim.min.map" />
-    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.js" />
-    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.min.js" />
-    <None Include="node_modules\jquery\external\sizzle\dist\sizzle.min.map" />
-    <None Include="node_modules\jquery\README.md" />
-    <None Include="node_modules\jquery\src\ajax.js" />
-    <None Include="node_modules\jquery\src\ajax\jsonp.js" />
-    <None Include="node_modules\jquery\src\ajax\load.js" />
-    <None Include="node_modules\jquery\src\ajax\parseXML.js" />
-    <None Include="node_modules\jquery\src\ajax\script.js" />
-    <None Include="node_modules\jquery\src\ajax\var\location.js" />
-    <None Include="node_modules\jquery\src\ajax\var\nonce.js" />
-    <None Include="node_modules\jquery\src\ajax\var\rquery.js" />
-    <None Include="node_modules\jquery\src\ajax\xhr.js" />
-    <None Include="node_modules\jquery\src\attributes.js" />
-    <None Include="node_modules\jquery\src\attributes\attr.js" />
-    <None Include="node_modules\jquery\src\attributes\classes.js" />
-    <None Include="node_modules\jquery\src\attributes\prop.js" />
-    <None Include="node_modules\jquery\src\attributes\support.js" />
-    <None Include="node_modules\jquery\src\attributes\val.js" />
-    <None Include="node_modules\jquery\src\callbacks.js" />
-    <None Include="node_modules\jquery\src\core.js" />
-    <None Include="node_modules\jquery\src\core\access.js" />
-    <None Include="node_modules\jquery\src\core\camelCase.js" />
-    <None Include="node_modules\jquery\src\core\DOMEval.js" />
-    <None Include="node_modules\jquery\src\core\init.js" />
-    <None Include="node_modules\jquery\src\core\nodeName.js" />
-    <None Include="node_modules\jquery\src\core\parseHTML.js" />
-    <None Include="node_modules\jquery\src\core\ready-no-deferred.js" />
-    <None Include="node_modules\jquery\src\core\ready.js" />
-    <None Include="node_modules\jquery\src\core\readyException.js" />
-    <None Include="node_modules\jquery\src\core\stripAndCollapse.js" />
-    <None Include="node_modules\jquery\src\core\support.js" />
-    <None Include="node_modules\jquery\src\core\toType.js" />
-    <None Include="node_modules\jquery\src\core\var\rsingleTag.js" />
-    <None Include="node_modules\jquery\src\css.js" />
-    <None Include="node_modules\jquery\src\css\addGetHookIf.js" />
-    <None Include="node_modules\jquery\src\css\adjustCSS.js" />
-    <None Include="node_modules\jquery\src\css\curCSS.js" />
-    <None Include="node_modules\jquery\src\css\hiddenVisibleSelectors.js" />
-    <None Include="node_modules\jquery\src\css\showHide.js" />
-    <None Include="node_modules\jquery\src\css\support.js" />
-    <None Include="node_modules\jquery\src\css\var\cssExpand.js" />
-    <None Include="node_modules\jquery\src\css\var\getStyles.js" />
-    <None Include="node_modules\jquery\src\css\var\isHiddenWithinTree.js" />
-    <None Include="node_modules\jquery\src\css\var\rboxStyle.js" />
-    <None Include="node_modules\jquery\src\css\var\rnumnonpx.js" />
-    <None Include="node_modules\jquery\src\css\var\swap.js" />
-    <None Include="node_modules\jquery\src\data.js" />
-    <None Include="node_modules\jquery\src\data\Data.js" />
-    <None Include="node_modules\jquery\src\data\var\acceptData.js" />
-    <None Include="node_modules\jquery\src\data\var\dataPriv.js" />
-    <None Include="node_modules\jquery\src\data\var\dataUser.js" />
-    <None Include="node_modules\jquery\src\deferred.js" />
-    <None Include="node_modules\jquery\src\deferred\exceptionHook.js" />
-    <None Include="node_modules\jquery\src\deprecated.js" />
-    <None Include="node_modules\jquery\src\dimensions.js" />
-    <None Include="node_modules\jquery\src\effects.js" />
-    <None Include="node_modules\jquery\src\effects\animatedSelector.js" />
-    <None Include="node_modules\jquery\src\effects\Tween.js" />
-    <None Include="node_modules\jquery\src\event.js" />
-    <None Include="node_modules\jquery\src\event\ajax.js" />
-    <None Include="node_modules\jquery\src\event\alias.js" />
-    <None Include="node_modules\jquery\src\event\focusin.js" />
-    <None Include="node_modules\jquery\src\event\support.js" />
-    <None Include="node_modules\jquery\src\event\trigger.js" />
-    <None Include="node_modules\jquery\src\exports\amd.js" />
-    <None Include="node_modules\jquery\src\exports\global.js" />
-    <None Include="node_modules\jquery\src\jquery.js" />
-    <None Include="node_modules\jquery\src\manipulation.js" />
-    <None Include="node_modules\jquery\src\manipulation\buildFragment.js" />
-    <None Include="node_modules\jquery\src\manipulation\getAll.js" />
-    <None Include="node_modules\jquery\src\manipulation\setGlobalEval.js" />
-    <None Include="node_modules\jquery\src\manipulation\support.js" />
-    <None Include="node_modules\jquery\src\manipulation\var\rcheckableType.js" />
-    <None Include="node_modules\jquery\src\manipulation\var\rscriptType.js" />
-    <None Include="node_modules\jquery\src\manipulation\var\rtagName.js" />
-    <None Include="node_modules\jquery\src\manipulation\wrapMap.js" />
-    <None Include="node_modules\jquery\src\manipulation\_evalUrl.js" />
-    <None Include="node_modules\jquery\src\offset.js" />
-    <None Include="node_modules\jquery\src\queue.js" />
-    <None Include="node_modules\jquery\src\queue\delay.js" />
-    <None Include="node_modules\jquery\src\selector-native.js" />
-    <None Include="node_modules\jquery\src\selector-sizzle.js" />
-    <None Include="node_modules\jquery\src\selector.js" />
-    <None Include="node_modules\jquery\src\serialize.js" />
-    <None Include="node_modules\jquery\src\traversing.js" />
-    <None Include="node_modules\jquery\src\traversing\findFilter.js" />
-    <None Include="node_modules\jquery\src\traversing\var\dir.js" />
-    <None Include="node_modules\jquery\src\traversing\var\rneedsContext.js" />
-    <None Include="node_modules\jquery\src\traversing\var\siblings.js" />
-    <None Include="node_modules\jquery\src\var\arr.js" />
-    <None Include="node_modules\jquery\src\var\class2type.js" />
-    <None Include="node_modules\jquery\src\var\concat.js" />
-    <None Include="node_modules\jquery\src\var\document.js" />
-    <None Include="node_modules\jquery\src\var\documentElement.js" />
-    <None Include="node_modules\jquery\src\var\fnToString.js" />
-    <None Include="node_modules\jquery\src\var\getProto.js" />
-    <None Include="node_modules\jquery\src\var\hasOwn.js" />
-    <None Include="node_modules\jquery\src\var\indexOf.js" />
-    <None Include="node_modules\jquery\src\var\isFunction.js" />
-    <None Include="node_modules\jquery\src\var\isWindow.js" />
-    <None Include="node_modules\jquery\src\var\ObjectFunctionString.js" />
-    <None Include="node_modules\jquery\src\var\pnum.js" />
-    <None Include="node_modules\jquery\src\var\push.js" />
-    <None Include="node_modules\jquery\src\var\rcssNum.js" />
-    <None Include="node_modules\jquery\src\var\rnothtmlwhite.js" />
-    <None Include="node_modules\jquery\src\var\slice.js" />
-    <None Include="node_modules\jquery\src\var\support.js" />
-    <None Include="node_modules\jquery\src\var\toString.js" />
-    <None Include="node_modules\jquery\src\wrap.js" />
+    <Content Include="node_modules/**" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
