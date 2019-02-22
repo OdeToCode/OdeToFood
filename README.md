@@ -15,11 +15,11 @@ dotnet build
 dotnet run
 ```
 
-Some environments, like Visul Stuio Code, can also detect .NET Core projects and automatically add support to build and run from the VS Code menus. 
+Some environments, like Visual Studio Code, can also detect .NET Core projects and automatically add support to build and run from the VS Code menus. 
 
 ### Clip 3 - Saving changes and refreshing
 
-VS uses some magic to automatically retart the web server when you make changes to source code files. If you are using command line tools, you can do the same using:
+VS uses some magic to automatically restart the web server when you make changes to source code files. If you are using command line tools, you can do the same using:
 
 `dotnet watch run`
 
