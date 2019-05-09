@@ -41,6 +41,37 @@ dotnet new classlib
 
 Changes for Bootstrap 4 - TBD
 
+## Module 3
+
+### Clip 5
+
+You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/). From the comamnd line:
+
+```text
+dotnet tool install --global dotnet-aspnet-codegenerator 
+```
+
+After installing, the following command should display a help screen and a list of avaialble generators. Make sure you execute the command inside a directory where a project exists.
+
+```text
+dotnet aspnet-codegenerator -h
+```
+
+Now you should be able to follow along with the scaffolding in the video.
+
+```text
+dotnet aspnet-codegenerator razorpage List Empty -udl -outDir Pages\Restaurants\
+```
+
+For Visual Studio users, you might also want a reference to CodeGeneration tools you can use from the UI. Run the following command in the project directory:
+
+```text
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet restore
+```
+
+This will allow you to right-click the project and run scaffolding. s
+
 ## Module 4
 
 ### Clip 2 
