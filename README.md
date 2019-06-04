@@ -43,6 +43,8 @@ Changes for Bootstrap 4 - TBD
 
 ## Module 3
 
+Note that Bootstrap version 4 no longer provides icons out of the box. See the [docs](https://getbootstrap.com/docs/4.0/extend/icons/) for more info. 
+
 ### Clip 5
 
 You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/). From the comamnd line:
