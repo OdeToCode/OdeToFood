@@ -39,7 +39,9 @@ dotnet new classlib
 
 ### Clip 3 
 
-Changes for Bootstrap 4 - TBD
+Bootstrap 4 does not include glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon, for example:
+
+&lt;i class="fas fa-search"&gt;&lt;/i&gt;
 
 ## Module 4
 
