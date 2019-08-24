@@ -65,9 +65,9 @@ namespace OdeToFood
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseNodeModules(env);
-            app.UseCookiePolicy();
-            
+
             app.UseMvc();
+            app.UseCookiePolicy();
         }
 
         private RequestDelegate SayHelloMiddleware(
