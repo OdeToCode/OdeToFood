@@ -3,6 +3,13 @@ A repo for the ASP.NET Core Pluralsight Project.
 
 The following are additional notes and FAQs about the course. 
 
+### ASP.NET Core 3
+
+The original version of the code as recorded in the Pluralsight course is with ASP.NET Core 2.1. I've placed this code
+into a branch named [aspnet21](https://github.com/OdeToCode/OdeToFood/tree/aspnet21).
+
+The master branch I am updating to use ASP.NET Core 3 and the latest versions of Bootstrap and jQuery. 
+
 ## Module 1
 
 ### Clip 2 - Creating the Project
