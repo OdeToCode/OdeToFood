@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using OdeToFood.Data;
 
 namespace OdeToFood
@@ -43,8 +44,7 @@ namespace OdeToFood
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, 
-                              IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -59,7 +59,7 @@ namespace OdeToFood
             app.Use(SayHelloMiddleware);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseNodeModules(env);
+            app.UseNodeModules();
 
             // aspnetcore30
             app.UseRouting();            
