@@ -62,7 +62,7 @@ You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://w
 dotnet tool install --global dotnet-aspnet-codegenerator 
 ```
 
-After installing, the following command should display a help screen and a list of avaialble generators. Make sure you execute the command inside a directory where a project exists.
+After installing, the following command should display a help screen and a list of available generators. Make sure you execute the command inside a directory where a project exists.
 
 ```text
 dotnet aspnet-codegenerator -h
@@ -87,7 +87,24 @@ This will allow you to right-click the project and run scaffolding. s
 
 ### Clip 2 
 
-Alternatives to MSSQL 
+See [Install SQL Server on a Mac](https://www.quackit.com/sql_server/mac/install_sql_server_on_a_mac.cfm) if you are moving through the course using Visual Studio for the MAC. From user [db](https://disqus.com/home/discussion/pluralsight-1/aspnet_core_fundamentals/#comment-4637096653): 
+
+> Once installed, take a note of your database user name (usually 'sa') and password.
+>
+> It is very smooth. I am using DBBeaver which is also explained in the article above and I find it great.
+>
+>Following Scott's class here, where he sets database connection string in `appsettings.json` to his local DB instance in Windows, you can just use this connection string:
+
+``` json
+"ConnectionStrings": {
+    "OdeToFoodDb":"Server=localhost,1433;Database=OdeToFood;User Id=sa; Password=your-password"
+}
+```
+
+>, then replace 'your-password' with your real password you choose when installing the SQL server image in docker container.
+>
+>It is very simple and smooth experience.
+
 
 
 
