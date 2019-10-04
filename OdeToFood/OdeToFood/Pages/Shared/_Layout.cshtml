@@ -7,15 +7,22 @@
 
     <environment include="Development">
         <link href="~/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/node_modules/@@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css"
+        <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" 
+              href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+              asp-fallback-href="~/node_modules/@@fortawesome/fontawesome-free/css/all.css"
+              asp-fallback-test-class="fa" 
+              asp-fallback-test-property="font-family" 
+              asp-fallback-test-value="FontAwesome" />        
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
-    <link href="~/node_modules/@@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    
 </head>
 <body>
 
