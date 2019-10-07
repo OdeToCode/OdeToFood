@@ -105,6 +105,19 @@ See [Install SQL Server on a Mac](https://www.quackit.com/sql_server/mac/install
 >
 >It is very simple and smooth experience.
 
+## Module 7
+
+### Implementing an API Controller
+
+If you aren't using Visual Studio, the scaffolding shown in this clip is something you can also achieve with the `dotnet-aspnet-codegenerator` tool discussed in module 3. The command would look like:
+
+```
+dotnet aspnet-codegenerator controller -api --name RestaurantsController
+    -- model OdeToFood.Core.Restaurant --dataContext OdeToFood.Data.OdeToFoodDbContext 
+```
+Note the `-api` switch uses a single dash. 
+
+
 
 
 
