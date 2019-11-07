@@ -117,8 +117,24 @@ dotnet aspnet-codegenerator controller -api -name RestaurantsController
 ```
 Note the `-api` switch uses a single dash. 
 
+### Changes to routing and services
 
+In ASP.NET Core 3.0+, you can bring in fine grained services to support Razor pages and controllers. You don't need to bring in the entire MVC framework. To use Razor pages and API controllers, for example, you'd need to have the following two method calls inside the `ConfigureServices` method of `Startup.cs`. 
 
+```
+// for aspnetcore3.0+
 
+services.AddRazorPages();
+services.AddControllers();
+```
 
+Routing is also a bit different, and more granular in 3.0. You'll need to the following code at the bottom of the `Configure` method in `Startup.cs` for 3.x:
 
+```
+app.UseRouting();            
+app.UseEndpoints(e =>
+{
+    e.MapRazorPages();
+    e.MapControllers();
+});
+```
