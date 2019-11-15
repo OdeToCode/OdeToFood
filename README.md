@@ -10,9 +10,9 @@ into a branch named [aspnet21](https://github.com/OdeToCode/OdeToFood/tree/aspne
 
 The master branch I am updating to use ASP.NET Core 3 and the latest versions of Bootstrap and jQuery. 
 
-## Module 1
+## Module 2 (Drilling into Data)
 
-### Clip 2 - Creating the Project
+### Clip 2 (Creating the New Project)
 
 To create, build, and run a project like we do in Visual Studio, you can use the command line:
 
@@ -24,7 +24,7 @@ dotnet run
 
 Some environments, like Visual Studio Code, can also detect .NET Core projects and automatically add support to build and run from the VS Code menus. 
 
-### Clip 3 - Saving changes and refreshing
+### Clip 3 (Editing Razor Pages)
 
 VS uses some magic to automatically restart the web server when you make changes to source code files. If you are using command line tools, you can do the same using:
 
@@ -34,7 +34,7 @@ VS uses some magic to automatically restart the web server when you make changes
 
 `dotnet run`
 
-### Clip 7 - Adding the OdeToFood.Core project
+### Clip 7 - (Creating an Entity)
 
 You can use `dotnet` to create the class library. Place this at the same folder level as the OdeToFood project. 
 
@@ -42,19 +42,19 @@ You can use `dotnet` to create the class library. Place this at the same folder 
 dotnet new classlib
 ```
 
-## Module 2
+## Module 3 (Working with Models and Model Binding)
 
-### Clip 3 
+### Clip 3 (Building a Search Form)
 
-Bootstrap 4 does not include glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon, for example:
+Bootstrap 4 no longer includes glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon, for example:
 
 &lt;i class="fas fa-search"&gt;&lt;/i&gt;
 
-## Module 3
+## Module 4 (Editing Data with Razor Pages)
 
-Note that Bootstrap version 4 no longer provides icons out of the box. See the [docs](https://getbootstrap.com/docs/4.0/extend/icons/) for more info. 
+Note that Bootstrap version 4 no longer provides icons out of the box. See the [docs](https://getbootstrap.com/docs/4.0/extend/icons/) for more info. [Font Awesome](https://fontawesome.com/start) is a good replacement.
 
-### Clip 5
+### Clip 5 (Adding Validation Checks)
 
 You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/). From the comamnd line:
 
@@ -83,9 +83,9 @@ dotnet restore
 
 This will allow you to right-click the project and run scaffolding. s
 
-## Module 4
+## Module 5 (Working with SQL Server and the Entity Framework Core)
 
-### Clip 2 
+### Clip 2 (Installing the Entity Framework)
 
 See [Install SQL Server on a Mac](https://www.quackit.com/sql_server/mac/install_sql_server_on_a_mac.cfm) if you are moving through the course using Visual Studio for the MAC. From user [db](https://disqus.com/home/discussion/pluralsight-1/aspnet_core_fundamentals/#comment-4637096653): 
 
@@ -105,7 +105,15 @@ See [Install SQL Server on a Mac](https://www.quackit.com/sql_server/mac/install
 >
 >It is very simple and smooth experience.
 
-## Module 7
+### Clip 4 (Using the Entity Framework Tools)
+
+Starting in 3.0, the dotnet ef command-line tool is no longer included in the .NET Core SDK. Before you can execute EF Core migration or scaffolding commands, you’ll have to install this package as either a global or local tool. To install the latest version as a global tool, use the following command:
+
+```
+dotnet tool install --global dotnet-ef
+```
+
+## Module 7 (Integrating Client-side JavaScript and CSS)
 
 ### Implementing an API Controller
 
