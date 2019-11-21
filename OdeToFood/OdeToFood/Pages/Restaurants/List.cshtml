@@ -11,9 +11,9 @@
         <div class="input-group">
             <input type="search" class="form-control" 
                    asp-for="SearchTerm" />
-            <span class="input-group-btn">
+            <span>
                 <button class="btn btn-default">
-                    <i class="glyphicon glyphicon-search"></i>
+                    <i class="fas fa-search"></i>
                 </button>
             </span>
         </div>
@@ -25,7 +25,7 @@
     <partial name="_Summary" model="restaurant" />
 }
 
-<a asp-page=".\Edit" class="btn btn-primary">Add New</a>
+<a asp-page="./Edit" class="btn btn-outline-primary">Add New</a>
 
 @section footer {
     <div>@Model.Message</div>
