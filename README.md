@@ -48,7 +48,9 @@ dotnet new classlib
 
 Bootstrap 4 no longer includes glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon, for example:
 
-&lt;i class="fas fa-search"&gt;&lt;/i&gt;
+```
+<i class="fas fa-search"></i>
+```
 
 ## Module 4 (Editing Data with Razor Pages)
 
@@ -56,10 +58,11 @@ Note that Bootstrap version 4 no longer provides icons out of the box. See the [
 
 ### Clip 5 (Adding Validation Checks)
 
-You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/). From the comamnd line:
+You'll need to install the NuGet package [dotnet-aspnet-codegenerator](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/). Install this package as a tool From the comamnd line, and also install the design package for the project:
 
 ```text
 dotnet tool install --global dotnet-aspnet-codegenerator 
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
 ```
 
 After installing, the following command should display a help screen and a list of available generators. Make sure you execute the command inside a directory where a project exists.
