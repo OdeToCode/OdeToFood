@@ -46,10 +46,15 @@ dotnet new classlib
 
 ### Clip 3 (Building a Search Form)
 
-Bootstrap 4 no longer includes glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon, for example:
+Bootstrap 4 changed some classes and no longer includes glyphicons. [Font Awesome](https://fontawesome.com/start) is a good replacement. Once you've included the Font Awesome stylesheet into your _Layout page with a link tag, the icons are just as easy to use. To show a search icon use this code:
 
 ```
-<i class="fas fa-search"></i>
+<input type="search" class="form-control" value="" />
+<div class="input-group-append">
+    <button class="btn btn-secondary">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
 ```
 
 ## Module 4 (Editing Data with Razor Pages)
