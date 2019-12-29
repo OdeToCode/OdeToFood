@@ -129,7 +129,7 @@ If you aren't using Visual Studio, the scaffolding shown in this clip is somethi
 
 ```
 dotnet aspnet-codegenerator controller -api -name RestaurantsController
-    -- model OdeToFood.Core.Restaurant --dataContext OdeToFood.Data.OdeToFoodDbContext 
+    --model OdeToFood.Core.Restaurant --dataContext OdeToFood.Data.OdeToFoodDbContext 
 ```
 Note the `-api` switch uses a single dash. 
 
