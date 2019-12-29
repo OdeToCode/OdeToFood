@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp30</TargetFramework>
+    <TargetFramework>netstandard21</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
