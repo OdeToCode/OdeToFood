@@ -144,7 +144,7 @@ services.AddRazorPages();
 services.AddControllers();
 ```
 
-Routing is also a bit different, and more granular in 3.0. You'll need to the following code at the bottom of the `Configure` method in `Startup.cs` for 3.x:
+Routing is also a bit different, and more granular in 3.0. You'll need to add the following code at the bottom of the `Configure` method in `Startup.cs` for 3.x:
 
 ```
 app.UseRouting();            
