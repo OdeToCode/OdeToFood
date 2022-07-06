@@ -5,7 +5,7 @@
     "bootstrap": "3.4.1",
     "datatables.net-bs": "1.10.19",
     "jquery": "3.4.1",
-    "jquery-validation": "1.19.1",
+    "jquery-validation": "1.19.5",
     "jquery-validation-unobtrusive": "3.2.11",
     "@fortawesome/fontawesome-free": "5.10.2"
   }
